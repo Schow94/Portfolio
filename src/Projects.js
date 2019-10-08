@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+
+import withStyles from '@material-ui/core/styles/withStyles';
+
+import Project from './Project';
 import image_calculator from './pictures/image_calculator.png';
 import image_magnitude from './pictures/image_magnitude.png';
 import image_shoppingCart from './pictures/image_shoppingCart.png';
@@ -83,32 +87,34 @@ const initialValue = [
   }
 ];
 
-function Projects() {
-  const { image } = styles;
-  const [state, setState] = useState(initialValue);
+function Projects(props) {
+  const { classes } = props;
+  const { root, paper, image, projectContainer } = classes;
+
+  const [state] = useState(initialValue);
 
   return (
     <div>
       <h1>Projects</h1>
-      {state.map(item => {
-        return (
-          <div key={item.id}>
-            <h3>Name: {item.name}</h3>
-            <p>Description: {item.description}</p>
-            <h4>Link: {item.link}</h4>
-            <h4>Github: {item.github}</h4>
-            <img style={image} src={item.picture} alt={item.name} />
-          </div>
-        );
-      })}
+      <div className={projectContainer}>
+        {state.map(item => {
+          return <Project item={item} />;
+        })}
+      </div>
     </div>
   );
 }
 
-export default Projects;
-
-const styles = {
-  image: {
-    width: '100%'
+const styles = theme => ({
+  root: {
+    flexGrow: 1
+  },
+  projectContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around'
   }
-};
+});
+
+export default withStyles(styles)(Projects);
