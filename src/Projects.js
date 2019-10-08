@@ -25,8 +25,7 @@ const initialValue = [
   {
     id: 2,
     name: 'Weather',
-    description:
-      'First React project I did independently. Calculator built in React. Handled math logic myself.',
+    description: 'Weather app with five day forecast.',
     link: 'https://schow94.github.io/Weather/',
     github: 'https://github.com/Schow94/Weather',
     picture: image_weather
