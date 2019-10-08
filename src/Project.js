@@ -1,5 +1,7 @@
 import React from 'react';
 
+import MoreInfo from './MoreInfo';
+
 import withStyles from '@material-ui/core/styles/withStyles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -36,7 +38,7 @@ function Project(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <MoreInfo project={item} />
       </CardActions>
     </Card>
   );

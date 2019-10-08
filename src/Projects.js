@@ -33,8 +33,7 @@ const initialValue = [
   {
     id: 3,
     name: 'Emaily',
-    description:
-      'First React project I did independently. Calculator built in React. Handled math logic myself.',
+    description: 'Full stack MERN app with O-Auth, Stripe API, & SendGrid API.',
     link: 'https://warm-thicket-82476.herokuapp.com/',
     github: 'https://github.com/Schow94/emaily---MERN',
     picture: image_emaily
@@ -43,7 +42,7 @@ const initialValue = [
     id: 4,
     name: 'Wifree',
     description:
-      'First React project I did independently. Calculator built in React. Handled math logic myself.',
+      'Built with React hooks. Utilizes Yelp API, Google Maps API & geolocation',
     link: 'none',
     github: 'https://github.com/Schow94/WifiApp-Hooks',
     picture: image_wifree
@@ -52,7 +51,7 @@ const initialValue = [
     id: 5,
     name: 'React Native Todo List',
     description:
-      'First React project I did independently. Calculator built in React. Handled math logic myself.',
+      'Was interested in React Native so I played around with it and built a basic Todo List.',
     link: 'none',
     github: 'https://github.com/Schow94/todoList-reactNative',
     picture: image_reactNative2
@@ -61,7 +60,7 @@ const initialValue = [
     id: 6,
     name: 'Shopping Cart',
     description:
-      'First React project I did independently. Calculator built in React. Handled math logic myself.',
+      "Practicing Redux & decided to build a shopping cart modeled after Nordstrom's online store.",
     link: 'https://schow94.github.io/Redux-ShoppingCart/',
     github: 'https://github.com/Schow94/Redux-ShoppingCart',
     picture: image_shoppingCart
@@ -78,8 +77,7 @@ const initialValue = [
   {
     id: 8,
     name: 'Code Blogz',
-    description:
-      'First React project I did independently. Calculator built in React. Handled math logic myself.',
+    description: 'Blog for new coders to share their experiences.',
     link: 'https://code-blogz.herokuapp.com/',
     github: 'https://github.com/Schow94/CodeBlog',
     picture: image_blog
@@ -90,13 +88,13 @@ function Projects(props) {
   const { classes } = props;
   const { root, paper, image, projectContainer } = classes;
 
-  const [state] = useState(initialValue);
+  const [projects] = useState(initialValue);
 
   return (
     <div>
       <h1>Projects</h1>
       <div className={projectContainer}>
-        {state.map(item => {
+        {projects.map(item => {
           return <Project item={item} />;
         })}
       </div>
