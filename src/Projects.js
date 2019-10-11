@@ -20,7 +20,9 @@ const initialValue = [
       'First React project I did independently. Calculator built in React. Handled math logic myself.',
     link: 'https://schow94.github.io/calculator-react/',
     github: 'https://github.com/Schow94/calculator-react',
-    picture: image_calculator
+    picture: image_calculator,
+    stack: ['React.js', 'Node.js'],
+    APIs: []
   },
   {
     id: 2,
@@ -28,7 +30,9 @@ const initialValue = [
     description: 'Weather app with five day forecast.',
     link: 'https://schow94.github.io/Weather/',
     github: 'https://github.com/Schow94/Weather',
-    picture: image_weather
+    picture: image_weather,
+    stack: ['React.js', 'Node.js'],
+    APIs: ['OpenWeather API', 'geolocation']
   },
   {
     id: 3,
@@ -36,7 +40,16 @@ const initialValue = [
     description: 'Full stack MERN app with O-Auth, Stripe API, & SendGrid API.',
     link: 'https://warm-thicket-82476.herokuapp.com/',
     github: 'https://github.com/Schow94/emaily---MERN',
-    picture: image_emaily
+    picture: image_emaily,
+    stack: ['React.js', 'Node.js', 'Mongo.db', 'Express.js'],
+    APIs: [
+      'OpenWeather API',
+      'geolocation',
+      'Material-CSS',
+      'SendGrid API',
+      'Stripe API',
+      'O-Auth'
+    ]
   },
   {
     id: 4,
@@ -45,7 +58,9 @@ const initialValue = [
       'Built with React hooks. Utilizes Yelp API, Google Maps API & geolocation',
     link: 'none',
     github: 'https://github.com/Schow94/WifiApp-Hooks',
-    picture: image_wifree
+    picture: image_wifree,
+    stack: ['React.js', 'Node.js'],
+    APIs: ['Yelp API', 'geolocation', 'Material-UI', 'Google Maps API']
   },
   {
     id: 5,
@@ -54,7 +69,9 @@ const initialValue = [
       'Was interested in React Native so I played around with it and built a basic Todo List.',
     link: 'none',
     github: 'https://github.com/Schow94/todoList-reactNative',
-    picture: image_reactNative2
+    picture: image_reactNative2,
+    stack: ['React Native', 'Node.js', 'Expo', 'Xcode'],
+    APIs: ['React Native Elements']
   },
   {
     id: 6,
@@ -63,7 +80,9 @@ const initialValue = [
       "Practicing Redux & decided to build a shopping cart modeled after Nordstrom's online store.",
     link: 'https://schow94.github.io/Redux-ShoppingCart/',
     github: 'https://github.com/Schow94/Redux-ShoppingCart',
-    picture: image_shoppingCart
+    picture: image_shoppingCart,
+    stack: ['React.js', 'Node.js'],
+    APIs: ['Redux', 'Material-UI']
   },
   {
     id: 7,
@@ -72,7 +91,9 @@ const initialValue = [
       'Tool for teachers to better manage their classes and students.',
     link: 'https://schow94.github.io/Magnitude-ReactAssignment/',
     github: 'https://github.com/Schow94/Magnitude-ReactAssignment',
-    picture: image_magnitude
+    picture: image_magnitude,
+    stack: ['React.js', 'Node.js'],
+    APIs: ['Material-UI']
   },
   {
     id: 8,
@@ -80,7 +101,9 @@ const initialValue = [
     description: 'Blog for new coders to share their experiences.',
     link: 'https://code-blogz.herokuapp.com/',
     github: 'https://github.com/Schow94/CodeBlog',
-    picture: image_blog
+    picture: image_blog,
+    stack: ['Node.js', 'Mongo.db', 'Express.js'],
+    APIs: ['Bootstrap', 'Passport.js']
   }
 ];
 
